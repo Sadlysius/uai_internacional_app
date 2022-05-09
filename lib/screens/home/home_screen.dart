@@ -39,22 +39,46 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Image.asset('logos/internacional.PNG',
-                    fit: BoxFit.contain, height: 100, width: 100),
+                    fit: BoxFit.contain, height: 200, width: 200),
                 Image.asset('logos/UAI.PNG',
-                    fit: BoxFit.contain, height: 100, width: 100),
+                    fit: BoxFit.contain, height: 200, width: 200),
               ],
             ),
             ElevatedButton(
-              child: const Text("Alumnos"),
-              onPressed: () {
-                print("Button clicked");
-              },
+              style: ElevatedButton.styleFrom(
+                primary: Colors.green,
+                onPrimary: Colors.white,
+                shadowColor: Colors.greenAccent,
+                elevation: 3,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(32.0)),
+                minimumSize: Size(250, 125), //////// HERE
+              ),
+              onPressed: () {},
+              child: const Text(
+                'Alumnos',
+                style: TextStyle(
+                  fontSize: 22.0, // insert your font size here
+                ),
+              ),
             ),
             ElevatedButton(
-              child: const Text("Extranjeros"),
-              onPressed: () {
-                print("Button clicked");
-              },
+              style: ElevatedButton.styleFrom(
+                primary: Colors.green,
+                onPrimary: Colors.white,
+                shadowColor: Colors.greenAccent,
+                elevation: 3,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(32.0)),
+                minimumSize: Size(250, 125), //////// HERE
+              ),
+              onPressed: () {},
+              child: const Text(
+                'Extranjeros',
+                style: TextStyle(
+                  fontSize: 22.0, // insert your font size here
+                ),
+              ),
             ),
           ],
         ),
